@@ -27,11 +27,11 @@
     }
 
     $middle_page = ($current_page <= 3)?3:(
-            ($current_page > $total_pages-3)?($total_pages-2):$current_page
+            ($current_page > $total_pages-3)?($total_pages-2):($current_page)
     );
 
     $row_start = ($current_page-1)*$rows_per_page;
-    $row_end = min($total_rows-1, $row_start+5);
+    $row_end = min($total_rows-1, $row_start+$rows_per_page);
 
 ?>
 
