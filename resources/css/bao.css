@@ -1,0 +1,66 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.page-item + .page-item {
+
+}
+
+.page-item {
+    margin: auto 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(4,116,215);
+}
+
+.page-item.active .page-link,
+.page-item.disabled .page-link {
+    background: inherit;
+    color: #fff;
+}
+
+.page-item:hover.disabled,
+.page-item:hover.active {
+    opacity: 1;
+}
+.page-item:hover {
+    opacity: 0.8;
+}
+
+.page-item:first-child,
+.page-item:last-child {
+    background-color: rgb(85,102,136);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.page-link {
+    border-radius: inherit;
+    border: none;
+    background-color: inherit;
+    color: #fff;
+}
+
+.page-link:hover {
+    background-color: inherit;
+    color: #fff;
+}
+.page-link:focus {
+    box-shadow: none;
+}
+
+.active, .active * {
+    background-color: rgb(33,68,98);
+}
+
+.disabled, .disabled * {
+    background-color: rgb(170,178,195) !important;
+}
